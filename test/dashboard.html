@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Nav tag is used for navigation -->
+    <nav>
+    <main>  
+      Logo
+      <!-- Add the anchor tag and enter forward slash infront of the page(or file) you want to link this back to. When you clink the link it should take you back to [index.html] -->
+      <a href="/index.html">This links back to index</a>
+    </nav>
+    <section>
+    <h1>To do list</h1>
+    <p>Lets get this stuff done buy EOY.</p>
+    <!-- When you want to add a external image you copy the image address from a website -->
+    <img src="https://i.insider.com/55e5cc1f9dd7cc1d008b7572?width=1200&format=jpeg" alt="">
+    <!-- When you want to add a local image file that's in the same directory(assets), enter "./" followed by the file or folder name (this accesses the folder assets). In this case that is ./assets which then follows up with another / to select the image (./assets/about.jpg) -->
+    <img src="./assets/about.jpg" alt="">
+    <!-- When you want to add a local image file in a folder(dashboard <not dashboard.html>) thats in a folder(assets)-->
+    <img src="./assets/dashboard/discord.png" alt="">
+    <!-- When you move the image file "about.jpg" to another folder, how can we access it? Since you are in the test folder (dashboard.html is in test folder), to access the file "about.jpg" in another folder (when about.jpg isn't in test folder) type ../ (this gets you out of the test folder to be able to select assets folder)-->
+    <img src="../assets/about.jpg" alt="">
+    <img src="../assets/dashboard/discord.png" alt="">
+    <!-- When you move the about.jpg image into the test folder from assets how can we now put the image back? Since the html file (dashboard.html) we are writing the code under is in the test folder we can directly select the image using "./about.jpg" -->
+    <img src="./about.jpg" alt="">
+    <ul>
+      <li>Land $100k+ job</li>
+      <li>Finish Frontend Simplified</li>
+      <li>Network with other people in the discord server</li>
+    </ul>
+    </section>
+    <section>
+    <h1>Land $100k job</h1>
+    <ol>
+        <li>Finish Frontend Simplified </li>
+        <li> Study for interviews </li>
+        <li>Apply to jobs</li>
+    <!-- Unordered lists(<ul>) are usually used while most of the time ordered(<ol>) lists wont be used -->
+    </ol>
+    </section>
+    </main>
+    <footer>
+        Copyright terms and conditions
+    </footer>
+  </body>
+</html>
